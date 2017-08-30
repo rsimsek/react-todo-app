@@ -28,7 +28,7 @@ class App extends Component {
 
   toggleTodo = id => {
     this.state.todos.map(todo => {
-      if (todo.id === id) return (todo.isCompleted = true);
+      if (todo.id === id) return (todo.isCompleted = !todo.isCompleted);
       else return null;
     });
     this.setState({ todos: this.state.todos });

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders list of todos 1`] = `
+<ul>
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }
+  />
+  <li
+    onClick={[Function]}
+    style={
+      Object {
+        "textDecoration": "none",
+      }
+    }
+  />
+</ul>
+`;
+
+exports[`renders todo title 1`] = `
+<h2>
+  Test Title
+</h2>
+`;

@@ -7,6 +7,7 @@ import "./App.css";
 //const todos = [{id : 1, value: 'Learn React', completed: true}, {id : 2, value: 'Learn Redux', completed: false}];
 
 window.id = 1;
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -15,10 +16,10 @@ class App extends Component {
     };
   }
 
+ 
   addTodo = val => {
     // Assemble data
     const todo = { text: val, id: window.id++, isCompleted: false };
-    if (!todo.text) console.log("shit");
     // Update data
     this.state.todos.push(todo);
     // Update state
@@ -37,7 +38,7 @@ class App extends Component {
   render() {
     return (
       <div style={{ App }}>
-        <TodoTitle />
+        <TodoTitle title={'Todo App'}/>
         <TodoForm addTodo={this.addTodo} />
         <TodoList todos={this.state.todos} toggleTodo={this.toggleTodo} />
       </div>

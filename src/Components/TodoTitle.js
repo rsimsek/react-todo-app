@@ -1,7 +1,7 @@
 import React from "react";
 
-const TodoTitle = () => (
-      <h2>ToDo App</h2>
+const TodoTitle = (props) => (
+      <h2>{props.title}</h2>
 );
 
 export default TodoTitle;
